@@ -1,6 +1,8 @@
 🛡️ Phishing Link Scanner 🔍
 
 A simple yet powerful cybersecurity tool built in Python to scan and detect potential phishing URLs. This tool analyzes links based on domain structure, IP address usage, and suspicious keywords, and can optionally integrate with VirusTotal for deeper verification. The project includes a clean and responsive frontend built using HTML, CSS, and JavaScript, connected to a Flask backend for seamless phishing analysis via a browser interface.
+
+
 ---
 
 ## 📦 Features
