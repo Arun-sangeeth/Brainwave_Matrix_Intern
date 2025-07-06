@@ -20,7 +20,6 @@ document.addEventListener('DOMContentLoaded', function () {
         .then(res => res.text())
         .then(html => {
             spinner.style.display = "none";
-            // Extract the result div from the returned HTML
             const parser = new DOMParser();
             const doc = parser.parseFromString(html, 'text/html');
             const newResult = doc.getElementById('result-box').innerHTML;
