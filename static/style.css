@@ -210,13 +210,14 @@ button:hover {
         margin: 0;
     }
 
-   .container {
+  .container {
         width: 90%;
-        max-width: 350px;
-        padding: 25px 20px;
-        border-radius: 16px;
-        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
-        background: rgba(255, 255, 255, 0.12);
+        max-width: 300px;      /* 👈 Reduced width */
+        margin: 0 10px;        /* 👈 Spacing from screen edges */
+        padding: 20px 15px;    /* 👈 Less padding inside */
+        border-radius: 14px;
+        background: rgba(255, 255, 255, 0.1);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
         backdrop-filter: blur(10px);
     }
 
