@@ -10,7 +10,6 @@ A simple yet powerful cybersecurity tool built in Python to scan and detect pote
 - ⚠️ Phishing indicator detection (keywords, IP-based URLs)
 - 🔐 Trusted domain cross-check
 - 🌐 Web interfaces: Streamlit & Flask versions
-- 📊 Export scan results as CSV
 - 🔌 Optional: VirusTotal threat intelligence integration
 
 ---
