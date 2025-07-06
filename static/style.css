@@ -86,7 +86,7 @@ input[type="text"] {
     width: 90%;
     padding: 12px;
     font-size: 16px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(34, 27, 27, 0.3);
     border-radius: 12px;
     margin-bottom: 20px;
     background: rgba(255, 255, 255, 0.2);
@@ -199,22 +199,21 @@ button:hover {
     body {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;  /* Align items toward the top */
         align-items: center;
         min-height: 100vh;
-        padding: 0;
+        padding-top: 60px;  /* Creates space from the top */
         margin: 0;
     }
 
     .container {
         width: 90%;
-        max-width: 360px;
-        margin: auto;
-        padding: 20px 15px;
+        max-width: 350px;
+        padding: 25px 20px;
         border-radius: 16px;
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-        background: rgba(255, 255, 255, 0.1); /* Optional: blend effect */
-        backdrop-filter: blur(12px); /* Optional: glassy blur */
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+        background: rgba(255, 255, 255, 0.12);
+        backdrop-filter: blur(10px);
     }
 
     form {
@@ -240,3 +239,5 @@ button:hover {
         margin-bottom: 15px;
     }
 }
+
+
