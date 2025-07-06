@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Phishing Link Scanner</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>🔍 Phishing Link Scanner</h1>
+        <form method="post">
+            <input type="text" name="url" placeholder="Enter URL to check" required>
+            <br>
+            <button type="submit">Scan</button>
+        </form>
+
+        <div id="spinner" style="display: none; margin-top: 20px;">
+            <img src="https://i.gifer.com/ZZ5H.gif" alt="Loading..." width="40">
+            <p>Scanning...</p>
+        </div>
+
+        <div id="result-box">
+            {% if result %}
+                {% set css_class = 'safe' %}
+                {% if "Phishing" in result %}
+                    {% set css_class = 'phishing' %}
+                {% elif "Suspicious" in result %}
+                    {% set css_class = 'suspicious' %}
+                {% endif %}
+        
+                <div class="result {{ css_class }}">
+                    {{ result | safe }}
+                    {% if result %}
+                        {% set reason = result.split(':', 1)[1].split('<br>')[0].strip() if ':' in result else 'No reason provided.' %}
+                        <span class="tooltip-icon">🛈
+                            <span class="tooltip-text">{{ reason }}</span>
+                        </span>
+                    {% endif %}
+                </div>
+            {% endif %}
+        </div>
+        
+    </div>
+</body>
+</html>
