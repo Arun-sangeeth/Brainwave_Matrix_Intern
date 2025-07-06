@@ -119,3 +119,34 @@ button:hover {
     visibility: visible;
     opacity: 1;
 }
+
+@media (max-width: 600px) {
+    .container {
+        margin: 30px 15px;
+        padding: 20px;
+        width: 90%;
+    }
+
+    input[type="text"] {
+        width: 100%;
+        font-size: 15px;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+        font-size: 15px;
+    }
+
+    .result {
+        font-size: 15px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    .tooltip-icon .tooltip-text {
+        font-size: 12px;
+    }
+}
