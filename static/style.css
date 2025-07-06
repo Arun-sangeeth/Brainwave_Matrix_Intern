@@ -196,40 +196,47 @@ button:hover {
 }
 
 @media screen and (max-width: 600px) {
-    .container {
-        margin: 40px 20px;
-        padding: 20px;
-        border-radius: 16px;
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 0;
+        margin: 0;
     }
 
-    h1 {
-        font-size: 22px;
-        line-height: 1.3;
+    .container {
+        width: 90%;
+        max-width: 360px;
+        margin: auto;
+        padding: 20px 15px;
+        border-radius: 16px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        background: rgba(255, 255, 255, 0.1); /* Optional: blend effect */
+        backdrop-filter: blur(12px); /* Optional: glassy blur */
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     input[type="text"] {
         width: 100%;
-        font-size: 14px;
-        padding: 10px;
-    }
-
-    button {
-        padding: 10px 20px;
+        text-align: center;
         font-size: 15px;
     }
 
-    #spinner p {
-        font-size: 14px;
+    button {
+        width: 100%;
+        font-size: 15px;
+        padding: 10px;
     }
 
-    .result {
-        font-size: 14px;
-        padding: 14px;
-    }
-
-    .tooltip-icon .tooltip-text {
-        font-size: 12px;
-        max-width: 200px;
+    h1 {
+        font-size: 22px;
+        margin-bottom: 15px;
     }
 }
-
