@@ -97,6 +97,10 @@ input[type="text"] {
     transition: all 0.3s ease;
 }
 
+input[type="text"]::placeholder {
+    color: #f0f0f0;
+    opacity: 0.8;
+}
 
 
 input[type="text"]:focus {
